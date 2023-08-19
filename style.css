@@ -1,3 +1,143 @@
-h1{
-    color: brown;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: auto;
+    width: 64%;
+    padding: 15px;
+    color: white;
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 20% 10% 10% 20%;
+    grid-template-rows: 500px 300px 300px 300px 300px;
+    justify-content: center;
+    align-content: center;
+    grid-auto-columns: 50%;
+    grid-gap: 5px;
+}
+
+
+
+.item1 {
+    background-image: url("https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=600");
+    grid-column: span 4;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.item2 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/2737656/pexels-photo-2737656.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+.item3 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&w=600);
+    grid-column: span 3;
+}
+
+.item4 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/40753/military-raptor-jet-f-22-airplane-40753.jpeg?auto=compress&cs=tinysrgb&w=600);
+    grid-column: span 3;
+}
+
+.item5 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/3727771/pexels-photo-3727771.jpeg?auto=compress&cs=tinysrgb&w=600);
+    grid-row: span 2;
+}
+
+.item6 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+.item7 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/1293120/pexels-photo-1293120.jpeg?auto=compress&cs=tinysrgb&w=600);
+    grid-column: span 2;
+}
+
+.item8 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/6297088/pexels-photo-6297088.jpeg?auto=compress&cs=tinysrgb&w=600);
+    ;
+    grid-column: span 2;
+}
+
+.item9 {
+    background: no-repeat center/cover url(https://images.pexels.com/photos/796606/pexels-photo-796606.jpeg?auto=compress&cs=tinysrgb&w=600);
+    grid-column: span 2;
+}
+
+#menu {
+    cursor: pointer;
+}
+
+.material-icons {
+    color: rgb(100, 100, 100);
+}
+
+.qliyeb {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+}
+
+.read {
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    background: transparent;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+#search {
+    cursor: pointer;
+}
+
+.switch {
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+}
+
+.swi {
+    background-color: #ccc;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    margin: 4px 2px;
+    border-radius: 50%;
+
+}
+
+button.swi:hover {
+    background-color: brown;
+    transition: 1s;
+}
+
+.swi
